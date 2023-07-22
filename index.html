@@ -4,24 +4,387 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+    </style>
+
     <title>Penguin Template Practice</title>
   </head>
   <body>
-    <header>
-      <nav class="flex">
-        <div class="logo">
-          <img src="" alt="" />
+    <header class="bg-[#FFFBF0]">
+      <nav>
+        <div
+          class="md:flex flex-row items-center justify-between text-[#3C3C3C] mx-20 my-5"
+        >
+          <div class="w-64">
+            <img src="icons/logo.png" alt="" />
+          </div>
+
+          <ul
+            class="md:flex flex-row font-semibold items-center justify-center text-lg md:space-x-10"
+          >
+            <li class="justify-center"><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="md:flex flex-row mx-20 justify-between items-center">
+        <div class="hero-text">
+          <h1 class="text-[#FABE4C] uppercase text-7xl font-normal font-bebas">
+            Be the Penguins <br />
+            <span class="text-[#363958]">of Winter</span>
+          </h1>
+          <p class="text-[#3E3E3E] text-lg my-3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <button
+            class="px-9 py-4 bg-gradient-to-r from-[#65a30d] to-[#4d7c0f] rounded-xl text-[#fff] text-lg font-medium my-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+              />
+            </svg>
+
+            Buy Now
+          </button>
         </div>
 
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </nav>
+        <div class="hero-img">
+          <img src="images/model.png" alt="" />
+        </div>
+      </div>
     </header>
-    <main></main>
+
+    <main class="max-w-7xl mx-auto">
+      <section class="my-10">
+        <h3 class="text-3xl font-bebas flex my-12 justify-center">
+          W0Man Jacket
+        </h3>
+        <div
+          class="jacket-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7"
+        >
+          <div class="jacket-1 shadow-lg shadow-indigo-500/40 m-2">
+            <div class="bg-[#F1F1F1] rounded-2xl p-5">
+              <img src="images/jacket-1.png" alt="" />
+            </div>
+            <div class="p-3">
+              <h3 class="text-3xl font-bold text-[#363958]">
+                Yellow Coat Jacket
+              </h3>
+              <p class="text-lg py-3 text-[#3E3E3E]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="price-btn flex items-center justify-between">
+                <h3 class="text-4xl font-bold text-[#FABE4C]">$234</h3>
+                <button
+                  class="px-9 py-4 bg-gradient-to-r from-[#65a30d] to-[#4d7c0f] rounded-xl text-[#fff] text-lg font-medium my-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="jacket-2 shadow-lg shadow-indigo-500/40 m-2">
+            <div class="bg-[#F1F1F1] rounded-2xl p-5">
+              <img src="images/jacket-2.png" alt="" />
+            </div>
+            <div class="p-3">
+              <h3 class="text-3xl font-bold text-[#363958]">Ladies Jacket</h3>
+              <p class="text-lg py-3 text-[#3E3E3E]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="price-btn flex items-center justify-between">
+                <h3 class="text-4xl font-bold text-[#FABE4C]">$234</h3>
+                <button
+                  class="px-9 py-4 bg-gradient-to-r from-[#65a30d] to-[#4d7c0f] rounded-xl text-[#fff] text-lg font-medium my-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="jacket-3 shadow-lg shadow-indigo-500/40 m-2">
+            <div class="bg-[#F1F1F1] rounded-2xl p-5">
+              <img src="images/jacket-3.png" alt="" />
+            </div>
+            <div class="p-3">
+              <h3 class="text-3xl font-bold text-[#363958]">
+                Woman Leather Jacket
+              </h3>
+              <p class="text-lg py-3 text-[#3E3E3E]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="price-btn flex items-center justify-between">
+                <h3 class="text-4xl font-bold text-[#FABE4C]">$234</h3>
+                <button
+                  class="px-9 py-4 bg-gradient-to-r from-[#65a30d] to-[#4d7c0f] rounded-xl text-[#fff] text-lg font-medium my-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="my-10">
+          <h3 class="text-3xl text-[#363958] font-bold flex justify-center">
+            Man Jacket
+          </h3>
+
+          <div
+            class="man-jacket-area-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7"
+          >
+            <div
+              class="man-jacket-container shadow-lg shadow-indigo-500/40 my-7"
+            >
+              <div class="img-logo p-3 bg-[#F1F1F1] rounded-2xl">
+                <img src="images/jacket-4.png" alt="" />
+              </div>
+              <div class="p-4">
+                <h3 class="text-3xl text-[#363958] font-bold">
+                  Snowboard Jacket Mens
+                </h3>
+                <p class="text-lg text-[#3E3E3E]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div class="price-btn flex items-center justify-between">
+                  <h3 class="text-4xl font-bold text-[#FABE4C]">$253</h3>
+                  <button
+                    class="px-9 py-4 bg-gradient-to-r from-[#65a30d] to-[#4d7c0f] rounded-xl text-[#fff] text-lg font-medium my-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 inline"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                      />
+                    </svg>
+
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="man-jacket-container shadow-lg shadow-indigo-500/40 my-7"
+            >
+              <div class="img-logo p-3 bg-[#F1F1F1] rounded-2xl">
+                <img src="images/jacket-4.png" alt="" />
+              </div>
+              <div class="p-4">
+                <h3 class="text-3xl text-[#363958] font-bold">
+                  Snowboard Jacket Mens
+                </h3>
+                <p class="text-lg text-[#3E3E3E]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div class="price-btn flex items-center justify-between">
+                  <h3 class="text-4xl font-bold text-[#FABE4C]">$253</h3>
+                  <button
+                    class="px-9 py-4 bg-gradient-to-r from-[#65a30d] to-[#4d7c0f] rounded-xl text-[#fff] text-lg font-medium my-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 inline"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                      />
+                    </svg>
+
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="man-jacket-container shadow-lg shadow-indigo-500/40 my-7"
+            >
+              <div class="img-logo p-3 bg-[#F1F1F1] rounded-2xl">
+                <img src="images/jacket-4.png" alt="" />
+              </div>
+              <div class="p-4">
+                <h3 class="text-3xl text-[#363958] font-bold">
+                  Snowboard Jacket Mens
+                </h3>
+                <p class="text-lg text-[#3E3E3E]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div class="price-btn flex items-center justify-between">
+                  <h3 class="text-4xl font-bold text-[#FABE4C]">$253</h3>
+                  <button
+                    class="px-9 py-4 bg-gradient-to-r from-[#65a30d] to-[#4d7c0f] rounded-xl text-[#fff] text-lg font-medium my-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 inline"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                      />
+                    </svg>
+
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="last-section-container grid grid-cols-1 gap-10 lg:grid-cols-2 flex justify-between items-center shadow-xl shadow-indigo-500/10 my-10 p-7 rounded-xl"
+        >
+          <div class="left-side-container">
+            <div class="flex items-center space-x-4 my-4">
+              <div class="img w-16">
+                <img src="icons/house.png" alt="" />
+              </div>
+              <div class="text">
+                <h3 class="text-2xl font-medium text-[#363958]">
+                  Find the Perfect Fit
+                </h3>
+                <p class="text-base text-[#3E3E3E] font-medium">
+                  Everybody is different, which is why we offer styles for every
+                  body.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4 my-4">
+              <div class="img w-16">
+                <img src="icons/box.png" alt="" />
+              </div>
+              <div class="text">
+                <h3 class="text-2xl font-medium text-[#363958]">
+                  Find the Perfect Fit
+                </h3>
+                <p class="text-base text-[#3E3E3E] font-medium">
+                  Everybody is different, which is why we offer styles for every
+                  body.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4 my-4">
+              <div class="img w-16">
+                <img src="icons/question.png" alt="" />
+              </div>
+              <div class="text">
+                <h3 class="text-2xl font-medium text-[#363958]">
+                  Find the Perfect Fit
+                </h3>
+                <p class="text-base text-[#3E3E3E] font-medium">
+                  Everybody is different, which is why we offer styles for every
+                  body.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-side-container">
+            <img src="images/shopping.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
